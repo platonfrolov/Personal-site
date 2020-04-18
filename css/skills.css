@@ -1,9 +1,106 @@
 #skills{
-    background-color: #000034;
-    display: block;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 300vh;
-    padding: 0;
-  }
+  /* background-color: #000034; */
+  background-color: white;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 300vh;
+  padding: 0;
+}
+
+.skills-title{
+  display: block;
+  width: 100%;
+  height: 75px;
+  float: left;
+}
+
+.skills-title .left{
+  width: 37.5%;
+  height: 75px;
+  display: block;
+  float: left;
+}
+
+.skills-title .text{
+  width: 25%;
+  height: 75px;
+  display: block;
+  float: left;
+  text-align: center;
+  line-height: 75px;
+}
+
+.skills-title .right{
+  width: 37.5%;
+  height: 75px;
+  display: block;
+  float: left;
+}
+
+.skill-box{
+  display: block;
+  width: 33.33%;
+  height: calc(100vh - 75px);
+  float: left;
+}
+
+.skill-box{
+  display: block;
+  width: 33.33%;
+  height: calc(100vh - 75px);
+  float: left;
+}
+
+.skill-box{
+  display: block;
+  width: 33.33%;
+  height: calc(100vh - 75px);
+  float: left;
+}
+
+.circle{
+  width: 90px;
+  height: 90px;
+  display: block;
+  background-color: black;
+  border-radius: 50%;
+  margin-left: calc(50% - 45px);
+}
+
+.skills{
+  padding-top: 5vh;
+}
+.skills .element{
+  display: block;
+  width: 60%;
+  margin-left: 20%;
+  height: 40px;
+  border-bottom: 1px solid black;
+  line-height: 40px;
+  font-size: 15px;
+}
+
+.stripe{
+  position: relative;
+  display: block;
+  height: 5px;
+  top: 35px;
+  background-color: black;
+  width: 0
+}
+
+.left .stripe{
+  right: 10%;
+}
+
+.right .stripe{
+  left: 10%;
+}
+
+h1{
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
