@@ -1,4 +1,71 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
 }
+
+#menu{
+    display: block;
+    width: 120px;
+    height: 240px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+}
+
+.menuicon{
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin-right: 0;
+    float: left;
+}
+
+.menuicon:hover{
+    cursor: pointer;
+}
+
+.menutext{
+    display: block;
+    height: 40px;
+    width: 80px;
+    float: left;
+    text-align: right;
+    line-height: 40px;
+}
+
+.menutext p{
+    display: none;
+    padding-right: 4px;
+    padding-top: 0px;
+    margin-top: 0px;
+    color: blue;
+}
+
+.glyphicon{
+    font-size: 30px;
+    margin: 5px;
+    color: blue;
+}
+
+#scroll-indicator{
+    position: fixed;
+    width: 40px;
+    height: 240px;
+    display: block;
+    right: 10px;
+    top: 10px;
+    z-index: 50;
+}
+
+#scroll-block{
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-color: green;
+}
+

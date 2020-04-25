@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <title>Platon Frolov</title>
-
         <link rel="stylesheet" type="text/css" href="css/about.css">
         <link rel="stylesheet" type="text/css" href="css/contact.css">
         <link rel="stylesheet" type="text/css" href="css/home.css">
@@ -11,22 +10,55 @@
         <link rel="stylesheet" type="text/css" href="css/projects.css">
         <link rel="stylesheet" type="text/css" href="css/skills.css">
         <link rel="stylesheet" type="text/css" href="css/timeline.css">
-
     </head>
-    <body>
-        <div id="menu">
-            <div class="menu"></div>
+    <body onscroll="updateScrollIndicator(this)">
+        <div id=scroll-indicator>
+            <div id=scroll-block></div>
         </div>
+        <div id="menu">
+            <div class="menu-home menu">
+                <div class="menutext"><p id="menu-text-home">Home</p></div>
+                <a href=#home><div class="menuicon menu-text-home" onmouseover="showMenuText(this)" onmouseout="hideMenuText(this)"><span class="glyphicon glyphicon-home"></span></div></a>
+            </div>
+            <div class="menu-about menu">
+                <div class="menutext"><p id="menu-text-about">About</p></div>
+                <a href=#about><div class="menuicon menu-text-about" onmouseover="showMenuText(this)" onmouseout="hideMenuText(this)"><span class="glyphicon glyphicon-user"></span></div></a>
+            </div>
+            <div class="menu-timeline menu">
+                <div class="menutext"><p id="menu-text-timeline">Timeline</p></div>
+                <a href=#timeline><div class="menuicon menu-text-timeline" onmouseover="showMenuText(this)" onmouseout="hideMenuText(this)"><span class="glyphicon glyphicon-dashboard"></span></div></a>
+            </div>
+            <div class="menu-skills menu">
+                <div class="menutext"><p id="menu-text-skills">Skills</p></div>
+                <a href=#skills><div class="menuicon menu-text-skills" onmouseover="showMenuText(this)" onmouseout="hideMenuText(this)"><span class="glyphicon glyphicon-education"></span></div></a>
+            </div>
+            <div class="menu-projects menu">
+                <div class="menutext"><p id="menu-text-projects">Projects</p></div>
+                <a href=#projects><div class="menuicon menu-text-projects" onmouseover="showMenuText(this)" onmouseout="hideMenuText(this)"><span class="glyphicon glyphicon-briefcase"></span></div></a>
+            </div>
+            <div class="menu-contact menu">
+                <div class="menutext"><p id="menu-text-contact">Contact</p></div>
+                <a href=#contact><div class="menuicon menu-text-contact" onmouseover="showMenuText(this)" onmouseout="hideMenuText(this)"><span class="glyphicon glyphicon-comment"></span></div></a>
+            </div>
+        </div>
+
+
         <div id="home">
             <img class="profile-picture" src="images/profielfoto.PNG">
             <h1>Welocome!</h1>
         </div>
+
+
         <div id="about">
 
         </div>
+
+
         <div id="timeline">
 
         </div>
+
+
         <div id="skills">
             <div class="skills-title">
                 <div class="stripe-box left">
@@ -73,9 +105,13 @@
                 </div>
             </div>
         </div>
+
+
         <div id="projects">
 
         </div>
+
+
         <div id="contact">
             <div class="name-box"></div>
             <div class="social-box">
@@ -86,6 +122,8 @@
             </div>
             <div class="email-box"></div> 
         </div>
+
+
         <script src="js/about.js"></script>
         <script src="js/contact.js"></script>
         <script src="js/home.js"></script>
